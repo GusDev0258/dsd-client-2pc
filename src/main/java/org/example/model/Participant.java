@@ -57,6 +57,7 @@ public class Participant {
                 } catch (IOException exception) {
                     System.out.println("Falha ao ler mensagem do coordenador, a conexão com o coordenador falhou " + exception.getMessage());
                     this.innerDecision = Message.ABORT;
+                    System.out.println("Decisão tomada: " + this.innerDecision);
                 }
             });
 
